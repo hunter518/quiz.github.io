@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="qui.css">
+
+</head>
+
+<body onload="setTimeout(hide,2000)">
+  
+  <div class="start" id="change">
+    <h1>Lets Start</h1>
+  </div>
+  <div id="progress-bar">
+    <div id="bar"></div>
+  </div>
+  <div class="column">
+    <div class="flex-center .flex-column">
+      <div class="hud">
+        <div class="hud-itme">
+          <p class="hud-pre">Question</p>
+          <p class="hud-text" id="questionCon"></p>
+          
+        </div>
+        <div class="hud-itme">
+          <p class="hud-pre">Score</p>
+          <p class="hud-text" id="score">0</p>
+        </div>
+      </div>
+      <h2 id="question">How to start a speech?</h2>
+      <div class="first">
+        <p class="choice1">A)</p>
+        <p class="option" data-number="1">Hey Guys!!!</p>
+      </div>
+      <div class="first">
+        <p class="choice1">B)</p>
+        <p class="option" data-number="2">Hey, how are you!!!</p>
+      </div>
+      <div class="first">
+        <p class="choice1">C)</p>
+        <p class="option" data-number="3">Hey !!!</p>
+      </div>
+      <div class="first">
+        <p class="choice1">D)</p>
+        <p class="option" data-number="4">Hey Good Ha!!!</p>
+      </div>
+    </div>
+  </div>
+  <script src="qui.js"></script>
+  <script>
+
+    function hide() {
+      document.getElementById("change").classList.add("hide");
+      document.getElementById("progress-bar").style.display = "flex";
+    }
+  </script>
+</body>
+
+</html>
